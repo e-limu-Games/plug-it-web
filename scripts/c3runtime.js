@@ -4533,7 +4533,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.TiledBg.Acts.Destroy,
 		C3.Plugins.Text.Acts.SetText,
-		C3.Plugins.LocalStorage.Acts.CheckItemExists,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.TiledBg.Acts.SetPos,
 		C3.Plugins.System.Exps.viewportleft,
@@ -4558,7 +4558,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TiledBg.Acts.SetInstanceVar,
 		C3.Plugins.TiledBg.Exps.Height,
 		C3.Behaviors.Physics.Acts.SetIterations,
-		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Cnds.PickByComparison,
 		C3.Plugins.System.Cnds.PickByEvaluate,
 		C3.Plugins.Sprite.Exps.AnimationFrame,
@@ -4630,6 +4629,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.PickedCount,
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Behaviors.Bullet.Acts.SetGravity,
 		C3.Plugins.System.Cnds.CompareBoolVar,
@@ -4638,17 +4638,17 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TiledBg.Acts.SetAngle,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.TiledBg.Cnds.CompareInstanceVar,
-		C3.Plugins.Touch.Cnds.OnTapGestureObject,
-		C3.Plugins.LocalStorage.Acts.SetItem,
+		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.ScriptsInEvents.Funtions_es_Event3_Act1,
-		C3.ScriptsInEvents.Funtions_es_Event5_Act1,
-		C3.ScriptsInEvents.Funtions_es_Event7_Act1,
-		C3.ScriptsInEvents.Funtions_es_Event9_Act1,
-		C3.ScriptsInEvents.Funtions_es_Event11_Act1,
-		C3.ScriptsInEvents.Funtions_es_Event13_Act1,
-		C3.ScriptsInEvents.Funtions_es_Event15_Act1,
-		C3.ScriptsInEvents.Funtions_es_Event17_Act1
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.ScriptsInEvents.Loading_es_Event15_Act1,
+		C3.ScriptsInEvents.Loading_es_Event17_Act1,
+		C3.ScriptsInEvents.Loading_es_Event19_Act1,
+		C3.ScriptsInEvents.Loading_es_Event21_Act1,
+		C3.ScriptsInEvents.Loading_es_Event23_Act1,
+		C3.ScriptsInEvents.Loading_es_Event25_Act1,
+		C3.ScriptsInEvents.Loading_es_Event27_Act1,
+		C3.ScriptsInEvents.Loading_es_Event29_Act1
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4711,16 +4711,17 @@ self.C3_JsPropNameTable = [
 	{Audio: 0},
 	{Variable1: 0},
 	{TiledBackground3: 0},
-	{Button2: 0},
-	{Send_Btn: 0},
+	{elimu_logo: 0},
+	{usafi_logo: 0},
 	{ChainLinks: 0},
 	{Phones: 0},
-	{PG_Level: 0},
 	{PhoneCount: 0},
 	{LevelCompleted: 0},
 	{FirstStart: 0},
 	{previousLink: 0},
 	{a: 0},
+	{Level: 0},
+	{PG_Level: 0},
 	{GameToOpen: 0},
 	{dataKey: 0},
 	{value: 0}
@@ -4828,7 +4829,10 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (and("[Outline=#000000]LEVEL ", v0.GetValue()) + "[/Outline]");
 		},
-		() => "Level",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("Title");
@@ -4905,10 +4909,6 @@ self.C3_ExpressionFuncs = [
 			const n2 = p._GetNode(2);
 			const n3 = p._GetNode(3);
 			return () => C3.toDegrees(C3.angleTo(n0.ExpObject(), n1.ExpObject(), n2.ExpObject(), n3.ExpObject()));
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5023,7 +5023,7 @@ self.C3_ExpressionFuncs = [
 		() => 0.05,
 		() => "Empty",
 		() => 3355603,
-		() => "PG_Level",
+		() => "Level",
 		() => 2,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5058,6 +5058,15 @@ self.C3_ExpressionFuncs = [
 			return () => (f0(0) + 100);
 		},
 		() => 3,
+		() => "PG_Level",
+		() => "Level Selector",
+		() => 4,
+		() => 5,
+		() => 6,
+		() => 7,
+		() => 8,
+		() => 9,
+		() => 10,
 		() => "Interface Functions"
 ];
 

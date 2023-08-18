@@ -3,7 +3,7 @@
 
 const scriptsInEvents = {
 
-	async Funtions_es_Event3_Act1(runtime, localVars)
+	async Loading_es_Event15_Act1(runtime, localVars)
 	{
 		window.addEventListener("message", event=>{
 			const obj = event.data;
@@ -32,14 +32,15 @@ const scriptsInEvents = {
 				
 				else if(obj.action === "retrieve_user_data")
 				{
-					runtime.globalVars.PG_Level = obj.payload.PG_Level;
+					runtime.globalVars.Level = obj.payload.PG_Level;
+					//console.log (runtime.globalVars.PG_Level);
 					
 				}
 			}
 		})
 	},
 
-	async Funtions_es_Event5_Act1(runtime, localVars)
+	async Loading_es_Event17_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -47,7 +48,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Funtions_es_Event7_Act1(runtime, localVars)
+	async Loading_es_Event19_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -58,7 +59,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Funtions_es_Event9_Act1(runtime, localVars)
+	async Loading_es_Event21_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -70,19 +71,19 @@ const scriptsInEvents = {
 		//alert("Posted " + localVars.GameToOpen);
 	},
 
-	async Funtions_es_Event11_Act1(runtime, localVars)
+	async Loading_es_Event23_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
 		    "action": "open_activity",
 			"payload": {
-				"app_key": "cleanliness"
+				"app_key": "plug-it"
 			}
 		},"*");
 		//alert("Posted")
 	},
 
-	async Funtions_es_Event13_Act1(runtime, localVars)
+	async Loading_es_Event25_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -94,7 +95,7 @@ const scriptsInEvents = {
 		//alert("Posted")
 	},
 
-	async Funtions_es_Event15_Act1(runtime, localVars)
+	async Loading_es_Event27_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -107,16 +108,15 @@ const scriptsInEvents = {
 		//alert("Posted")
 	},
 
-	async Funtions_es_Event17_Act1(runtime, localVars)
+	async Loading_es_Event29_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
 		    "action": "retrieve_user_data",
 			"payload": {
-				"app_key": "cleanliness"
+				"app_key": "plug-it"
 			}
 		},"*");
-		//alert("Posted")
 	}
 
 };
