@@ -4640,14 +4640,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.CompareVar,
-		C3.ScriptsInEvents.Loading_es_Event26_Act1,
-		C3.ScriptsInEvents.Loading_es_Event28_Act1,
-		C3.ScriptsInEvents.Loading_es_Event30_Act1,
-		C3.ScriptsInEvents.Loading_es_Event32_Act1,
-		C3.ScriptsInEvents.Loading_es_Event34_Act1,
-		C3.ScriptsInEvents.Loading_es_Event36_Act1,
-		C3.ScriptsInEvents.Loading_es_Event38_Act1,
-		C3.ScriptsInEvents.Loading_es_Event40_Act1
+		C3.ScriptsInEvents.Loading_es_Event27_Act1,
+		C3.ScriptsInEvents.Loading_es_Event29_Act1,
+		C3.ScriptsInEvents.Loading_es_Event31_Act1,
+		C3.ScriptsInEvents.Loading_es_Event33_Act1,
+		C3.ScriptsInEvents.Loading_es_Event35_Act1,
+		C3.ScriptsInEvents.Loading_es_Event37_Act1,
+		C3.ScriptsInEvents.Loading_es_Event39_Act1,
+		C3.ScriptsInEvents.Loading_es_Event41_Act1
 	];
 };
 self.C3_JsPropNameTable = [
