@@ -3,7 +3,7 @@
 
 const scriptsInEvents = {
 
-	async Loading_es_Event27_Act1(runtime, localVars)
+	async Loader_es_Event4_Act1(runtime, localVars)
 	{
 		window.addEventListener("message", event=>{
 			const obj = event.data;
@@ -40,7 +40,7 @@ const scriptsInEvents = {
 		})
 	},
 
-	async Loading_es_Event29_Act1(runtime, localVars)
+	async Loader_es_Event6_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -48,7 +48,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Loading_es_Event31_Act1(runtime, localVars)
+	async Loader_es_Event8_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -59,7 +59,7 @@ const scriptsInEvents = {
 		},"*");
 	},
 
-	async Loading_es_Event33_Act1(runtime, localVars)
+	async Loader_es_Event10_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -71,7 +71,7 @@ const scriptsInEvents = {
 		//alert("Posted " + localVars.GameToOpen);
 	},
 
-	async Loading_es_Event35_Act1(runtime, localVars)
+	async Loader_es_Event12_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -83,7 +83,7 @@ const scriptsInEvents = {
 		//alert("Posted")
 	},
 
-	async Loading_es_Event37_Act1(runtime, localVars)
+	async Loader_es_Event14_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -95,7 +95,7 @@ const scriptsInEvents = {
 		//alert("Posted")
 	},
 
-	async Loading_es_Event39_Act1(runtime, localVars)
+	async Loader_es_Event16_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
@@ -108,7 +108,7 @@ const scriptsInEvents = {
 		//alert("Posted")
 	},
 
-	async Loading_es_Event41_Act1(runtime, localVars)
+	async Loader_es_Event18_Act1(runtime, localVars)
 	{
 		window.parent.postMessage(
 		{
