@@ -4550,6 +4550,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.System.Exps.layoutname,
 		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Cnds.Every,
 		C3.Behaviors.Physics.Acts.EnableCollisions,
 		C3.Behaviors.Physics.Acts.SetWorldGravity,
 		C3.Behaviors.Physics.Acts.SetImmovable,
@@ -4637,7 +4638,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TiledBg.Acts.SetAngle,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.TiledBg.Cnds.CompareInstanceVar,
-		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.ScriptsInEvents.Loading_es_Event27_Act1,
@@ -4863,6 +4863,8 @@ self.C3_ExpressionFuncs = [
 			return () => f0();
 		},
 		() => "Level1",
+		() => 1,
+		() => "PG_Level",
 		() => 0.5,
 		() => 99,
 		p => {
@@ -4880,7 +4882,6 @@ self.C3_ExpressionFuncs = [
 			const n2 = p._GetNode(2);
 			return () => or(or(((n0.ExpObject()) === (0) ? 1 : 0), ((n1.ExpObject()) === (5) ? 1 : 0)), ((n2.ExpInstVar()) === (1) ? 1 : 0));
 		},
-		() => 1,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpInstVar_Family();
@@ -5025,7 +5026,6 @@ self.C3_ExpressionFuncs = [
 		() => 0.05,
 		() => "Empty",
 		() => 3355603,
-		() => "PG_Level",
 		() => 2,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
