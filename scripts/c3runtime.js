@@ -4639,6 +4639,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.TiledBg.Cnds.CompareInstanceVar,
 		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.CompareTime,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.ScriptsInEvents.Loading_es_Event27_Act1,
 		C3.ScriptsInEvents.Loading_es_Event29_Act1,
