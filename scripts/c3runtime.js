@@ -4664,6 +4664,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.TiledBg.Cnds.CompareInstanceVar,
 		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.ScriptsInEvents.Interface_es_Event2_Act1,
 		C3.ScriptsInEvents.Interface_es_Event4_Act1,
@@ -4748,6 +4749,7 @@ self.C3_JsPropNameTable = [
 	{previousLink: 0},
 	{a: 0},
 	{PG_Level: 0},
+	{Timer: 0},
 	{GameKey: 0},
 	{GameAction: 0},
 	{UserEmail: 0},
@@ -5098,6 +5100,7 @@ self.C3_ExpressionFuncs = [
 			return () => (f0(0) + 100);
 		},
 		() => 3,
+		() => 5,
 		() => "plug-it",
 		() => "sign_in"
 ];
