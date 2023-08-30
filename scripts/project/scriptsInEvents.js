@@ -12,7 +12,7 @@ const scriptsInEvents = {
 				if(obj.action === "sign_in")
 				{	
 					runtime.globalVars.GameAction = obj.action;
-					alert(runtime.globalVars.GameAction);
+					//alert(runtime.globalVars.GameAction);
 					
 					runtime.globalVars.GameKey = obj.payload.app_key;
 					//alert(runtime.globalVars.GameKey);

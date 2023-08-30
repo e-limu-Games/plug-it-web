@@ -5100,9 +5100,7 @@ self.C3_ExpressionFuncs = [
 			return () => (f0(0) + 100);
 		},
 		() => 3,
-		() => 5,
-		() => "plug-it",
-		() => "sign_in"
+		() => 5
 ];
 
 
