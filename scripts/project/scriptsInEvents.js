@@ -32,11 +32,11 @@ const scriptsInEvents = {
 				else if(obj.action === "retrieve_user_data")
 				{
 					runtime.globalVars.PG_Level = obj.payload.PG_Level;
-				}
+				
 						if (typeof obj.payload.PG_Level === 'undefined'){
 				runtime.globalVars.PG_Level = 1;
 				}
-			}
+			}}
 		})
 	},
 
