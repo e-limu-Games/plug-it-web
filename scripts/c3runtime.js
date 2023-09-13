@@ -4726,7 +4726,6 @@ self.C3_JsPropNameTable = [
 	{Sine: 0},
 	{Sprite: 0},
 	{Text: 0},
-	{Sprite2: 0},
 	{BlackOverlay: 0},
 	{Buttons: 0},
 	{CompletedTxt: 0},
